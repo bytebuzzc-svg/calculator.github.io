@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimta Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="calculator" id="nimta-calc">
+        <header class="brand">
+            <span class="brand-class">Nimta <em>calculator</em></span>
+            <span class="brand-badge">SCI</span>
+        </header>
+
+        <div class="display" aria-live="polite">
+            <div class="history" id="history"></div>
+            <div class="current" id="current">0</div>
+        </div>
+
+        <div class="keypad">
+            <div class="row">
+                <button class="btn func" data-func="sin">sin</button>
+                <button class="btn func" data-func="cos">cos</button>
+                <button class="btn func" data-func="tan">tan</button>
+                <button class="btn func" data-func="log">log</button>
+                <button class="btn func" data-func="ln">ln</button>
+            </div>
+            <div class="row">
+                <button class="btn func" data-func="sqrt">√</button>
+                <button class="btn func" data-func="factorial">x!</button>
+                <button class="btn func" data-func="pi">π</button>
+                <button class="btn func" data-func="e">e</button>
+                <button class="btn func" data-func="square">x²</button>
+            </div>
+            <div class="row">
+                <button class="btn func" data-func="power">xʸ</button>
+                <button class="btn func" data-func="exp">EXP</button>
+                <button class="btn utility" data-action="paren" data-paren="(">(</button>
+                <button class="btn utility" data-action="paren" data-paren=")">)</button>
+                <button class="btn utility" data-action="percent">%</button>
+            </div>
+            <div class="row">
+                <button class="btn utility" data-action="clear">C</button>
+                <button class="btn utility" data-action="back">⌫</button>
+                <button class="btn utility" data-action="sign">±</button>
+                <button class="btn op" data-op="^">^</button>
+                <button class="btn op" data-op="/">÷</button>
+            </div>
+            <div class="row">
+                <button class="btn" data-num="7">7</button>
+                <button class="btn" data-num="8">8</button>
+                <button class="btn" data-num="9">9</button>
+                <button class="btn op" data-op="*">×</button>
+                <button class="btn op" data-op="-">−</button>
+            </div>
+            <div class="row">
+                <button class="btn" data-num="4">4</button>
+                <button class="btn" data-num="5">5</button>
+                <button class="btn" data-num="6">6</button>
+                <button class="btn op" data-op="+">+</button>
+                <button class="btn equal" data-action="equals">=</button>
+            </div>
+            <div class="row">
+                <button class="btn" data-num="1">1</button>
+                <button class="btn" data-num="2">2</button>
+                <button class="btn" data-num="3">3</button>
+                <button class="btn" data-num="0">0</button>
+                <button class="btn" data-num=".">.</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

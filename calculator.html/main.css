@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: dark;
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at top, #26334f 0, #111827 55%, #090d18 100%);
+}
+
+.calculator {
+    width: min(92vw, 430px);
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    background: linear-gradient(145deg, #1d2538, #121725);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #eef2ff;
+}
+
+.brand-class {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.brand-class em {
+    color: #a5b4fc;
+    font-weight: 500;
+}
+
+.brand-badge {
+    padding: 5px 9px;
+    border-radius: 999px;
+    background: #6366f1;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.display {
+    min-height: 112px;
+    margin-bottom: 12px;
+    padding: 14px 16px;
+    overflow: hidden;
+    border: 1px solid rgba(165, 180, 252, 0.16);
+    border-radius: 16px;
+    background: #080b12;
+    text-align: right;
+}
+
+.history {
+    min-height: 24px;
+    color: #7f8aa3;
+    font-size: 14px;
+}
+
+.current {
+    margin-top: 8px;
+    color: #f8fafc;
+    font-size: clamp(34px, 9vw, 48px);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.keypad {
+    display: grid;
+    gap: 8px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.btn {
+    min-height: 52px;
+    border: 0;
+    border-radius: 12px;
+    background: #293248;
+    color: #f8fafc;
+    font: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 80ms ease, background 150ms ease;
+}
+
+.btn:hover {
+    background: #364159;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.btn:focus-visible {
+    outline: 3px solid #818cf8;
+    outline-offset: 2px;
+}
+
+.func {
+    background: #20283a;
+    color: #c7d2fe;
+    font-size: 15px;
+}
+
+.utility {
+    background: #353d54;
+    color: #ddd6fe;
+}
+
+.op {
+    background: #4f46e5;
+}
+
+.op:hover {
+    background: #6366f1;
+}
+
+.equal {
+    background: #ec4899;
+}
+
+.equal:hover {
+    background: #f472b6;
+}
